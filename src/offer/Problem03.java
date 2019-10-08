@@ -12,7 +12,7 @@ package offer;
  * Created by gfn on 2017/5/26.
  */
 public class Problem03 {
-	public static boolean find(int target, int [][] array) {
+    public static boolean find(int target, int [][] array) {
 		if(array==null)
 			return false;
 		int column = array[0].length-1;
