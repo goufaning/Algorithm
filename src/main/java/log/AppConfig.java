@@ -11,14 +11,14 @@ import javax.sql.DataSource;
 
 @Configuration
 @ComponentScan("log")
-@MapperScan("log")
+@MapperScan("log.mapper")
 public class AppConfig {
     @Bean
     public DataSource dataSource(){
         DriverManagerDataSource ds = new DriverManagerDataSource();
         ds.setUsername("root");
         ds.setPassword("123456");
-        ds.setUrl("jdbc:mysql:///test");
+        ds.setUrl("jdbc:mysql://127.0.0.1:3306/job");
         ds.setDriverClassName("com.mysql.jdbc.Driver");
         return ds;
     }
